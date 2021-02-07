@@ -1,0 +1,220 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(255, 0, 51);
+    color: white;
+    min-width: 500px;
+}
+
+/* Start Design Header Part */
+
+header{
+    min-width: 500px;
+    width: 90%;
+    margin: 0px auto;
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2{
+    cursor: pointer;
+}
+
+header ul li{
+    list-style: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 0px 10px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#active{
+    color: rgb(56, 0, 10);
+}
+
+ul li:hover{
+    color: rgb(56, 0, 10);
+}
+
+.select-none{
+    user-select: none;
+}
+
+/* End Design Header Part */
+
+
+
+/* Start Design Ingredients Section */
+
+.ingredients-section{
+    width: 600px;
+    background-color: white;
+    color: black;
+    overflow: hidden;
+    margin: 20px auto;
+    border-radius: 10px;
+    display: none;
+}
+
+.ingredients-section img{
+    transform: translate(-60px,-160px) scale(1) rotate(0deg);
+    transition: all 0.7s;
+}
+
+.ingredients-section img:hover{
+    transform: translate(-60px,-160px) scale(1.03) rotate(-7deg);
+}
+
+.target-img-div{
+    display: inline-block;
+    overflow: hidden;
+    height: 400px;
+}
+
+.food-details{
+    margin: 30px 0px 80px 40px;
+}
+
+.food-details h1{
+    margin-bottom: 40px;
+}
+
+.food-details h1,h3{
+    color: rgb(255, 0, 47);
+}
+
+.food-details div{
+    margin: 20px 0px;
+}
+
+.food-details div p{
+    margin: 13px 0px;
+    color: rgb(117, 1, 24);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.food-details div p:hover{
+    color:rgb(255, 0, 51);
+    margin-left: 5px;
+}
+
+.food-details div p i{
+    margin-right: 5px;
+    color: rgb(255, 0, 51);
+}
+
+/* End Design Ingredients Section */
+
+
+/* Start Design Search Section */
+
+.search-section{
+    text-align: center;
+    padding: 30px;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-section div{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.search-section i,.search-section input,.search-section button{
+    font-size: 20px;
+    border: none;
+    padding: 15px;
+}
+
+.search-section i{
+    color:rgb(255, 0, 51);
+}
+
+.search-section input:focus, .search-section button{
+    outline: none;
+}
+
+.search-section button{
+    background-color: black;
+    color: rgb(255, 0, 51);
+    cursor: pointer;
+}
+
+/* End Design Search Section */
+
+/* Start Design Meal Item section */
+
+.meal-items-section{
+    min-height: 300px;
+    min-width: 500px;
+    width: 90%;
+    margin: 0px auto;
+    display: none;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.item{
+    min-width: 190px;
+    background-color: white;
+    color:rgb(255, 0, 51);
+    border-radius: 7px;
+    overflow: hidden;
+    margin: 10px 10px;
+    transform: scale(1);
+    transition: all 0.4s;
+}
+
+.item:hover{
+    transform:  scale(1.01);
+}
+
+.item img{
+    width: 100%;
+}
+
+.item h3{
+    margin: 15px 0px 25px 0px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* End Design Meal Item Section */
+
+/* Start Design Not Found Section */
+
+.not-found-section{
+    margin: 20px 0px;
+    display: none;
+    text-align: center;
+}
+
+.error{
+    font-size: 40px;
+}
+
+.not-found-emoji{
+    font-size: 150px;
+    margin-bottom: 10px;
+}
+
+.not-found-section p{
+    font-size: 30px;
+}
+
+/* End Design Not Found And Welcome Section */

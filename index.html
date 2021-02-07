@@ -6,10 +6,74 @@
     <title>Cooking Master</title>
 
     <link rel="stylesheet" href="./css/style.css">
+    <!-- Link fontawesome -->
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css">
 </head>
 <body>
-    
 
+    <!-- Start Header -->
+    <header class="select-none">
+        <h2 class="logo" id="logo">Cooking Master</h2>
+
+        <!-- Start Menu Bar -->
+        <ul>
+            <li id="active">Home</li>
+            <li>About</li>
+            <li>Recipes</li>
+            <li>Blog</li>
+        </ul>
+        <!-- End Menu Bar -->
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Ingredients Section -->
+    <section id="ingredients-section" class="ingredients-section">
+        <div class="target-img-div">
+            <img src="./img/foodTwo.jpg" alt="" id="target-meal-img">
+        </div>
+
+        <!-- Start Ingredients Div -->
+        <div class="food-details">
+            <h1 id="food-name">Food Name</h1>
+            <h3>Ingredients</h3>
+
+            <div id="igredients">
+                
+            </div>
+        </div>
+        <!-- End Ingredients Div -->
+
+    </section>
+    <!-- End Ingredients Section -->
+
+    <!-- Start Search Section -->
+    <section class="search-section">
+        <div>
+            <i class="fas fa-search"></i>
+
+            <input 
+                type="text"
+                placeholder="Search for Meal...."
+                id="meal-input">
+
+            <button id="search-btn">Search</button>
+        </div>
+    </section>
+    <!-- End Search Section -->
+
+    <!-- Start Meal Items Section -->
+    <section class="meal-items-section" id="meal-items-section">
+        
+    </section>
+    <!-- End Meal Items Section -->
+
+    <!-- Start Not Found Section -->
+    <section class="not-found-section" id="not-found-section">
+        <h1 class="not-found-emoji"><i class="far fa-frown" id="emoji"></i></h1>
+        <h1 class="error" id="error">Oops! This meal is not cocking!</h1>
+        <p id="error-message">Please search another meal.</p>
+    </section>
+    <!-- Start Not Found Section -->
 
     <script src="./js/script.js"></script>
 </body>
