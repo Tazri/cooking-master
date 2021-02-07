@@ -1,6 +1,5 @@
 // base url
-const urlForSearch = 'https://www.themealdb.com/api/json/v1/1/search.php?s='
-const urlForIngredients = 'https://www.themealdb.com/api/json/v1/1/search.php?s=';
+const baseUrl = 'https://www.themealdb.com/api/json/v1/1/search.php?s='
 
 // add event listener on button 
 document.getElementById('search-btn').addEventListener('click',()=>{
@@ -9,7 +8,7 @@ document.getElementById('search-btn').addEventListener('click',()=>{
     // if user enter the meal name
     if(mealName){
         // send request for data
-        fetch(urlForSearch+mealName)
+        fetch(baseUrl+mealName)
             .then(response=> response.json())
             .then(data => {
             // if meals not exist
@@ -31,7 +30,7 @@ document.getElementById('meal-items-section').addEventListener('click',event=>{
     
     if(h3.tagName == 'H3'){
         // send request
-        fetch(urlForIngredients+h3.innerText)
+        fetch(baseUrl+h3.innerText)
         .then(response => response.json())
         .then(data =>{
             showIngredients(data.meals[0]);

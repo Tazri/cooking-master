@@ -2,12 +2,8 @@
 <p>This is simple project where show the meal and meals ingredients.This project for api practicing.In this project I use themealdb api.</p>
 
 <h2>The Meal Api</h2>
-<p>I use two api link from the meal api.</p>
+<p>I use one api link from the meal api.And this is https://www.themealdb.com/api/json/v1/1/search.php?s=</p>
 
-<ul>
-    <li>It use for Search => https://www.themealdb.com/api/json/v1/1/filter.php?i=chicken_breast</li>
-    <li>It use for Search =>  https://www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata </li>
-</ul>
 
 <h2>Function Details</h2>
 
